@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SaludoController {
 	@GetMapping(value="/saludo", produces=MediaType.TEXT_PLAIN_VALUE)
 	public String saludar() {
-		return"======== WELCOME TO MY SPRING BOOT Y MODIFICADO DES DE GIT ==========="; 
+		return"======== WELCOME TO MY SPRING BOOT Y MODIFICADO DESDE GIT ==========="; 
 	}
 
 @GetMapping(value="/contar/{cad}", produces = MediaType.TEXT_PLAIN_VALUE)
