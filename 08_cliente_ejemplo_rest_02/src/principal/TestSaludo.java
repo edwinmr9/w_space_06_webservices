@@ -13,12 +13,12 @@ public class TestSaludo {
 		//LLAMADA AL RECURSO DELETE 
 //		template.delete(url+"/eliminar/profeDelete");
 		template.delete(url+"/testing");
-		
-	
-/*	
+
+		/*	
+		 
 		//llamada a primer recurso
 		String resultado=template.getForObject(url, String.class);
-		System.out.println("Respuesta primer recurso "+resultado);
+		System.out.println("Respuesta primer recurso "+resultado);		
 		//llamada a segundo recurso
 		String resultado2=template.getForObject(url+"/profe", String.class);
 		System.out.println("Respuesta segundo recurso "+resultado2);
@@ -27,6 +27,7 @@ public class TestSaludo {
 		System.out.println("Respuesta tercer recurso "+item.getNombre()+"-"+item.getEmail());
 		//llamada al cuarto recurso
 		Item it=new Item("prueba","prueba@gmail.com",99);
+		
 		String resultado3=template.postForObject(url, it, String.class);
 		System.out.println("Respuesta cuarto recurso "+resultado3);
 		//llamada al quinto recurso
